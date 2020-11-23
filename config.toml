@@ -1,6 +1,6 @@
 baseURL = "https://childrenconcert.com/"
 languageCode = "en-us"
-title = "Children for Children"
+title = "Children for Children Concert"
 
 ############################## navigation ###############################
 [menu]
@@ -17,7 +17,7 @@ URL = "#cause"
 weight = 2
 
 [[menu.main]]
-name = "Donate"
+name = "Donation"
 URL = "#donate"
 weight = 3
 
