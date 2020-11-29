@@ -1,0 +1,158 @@
+body {
+  background-color: $body-color;
+  transition: .2s ease;
+}
+
+::selection {
+  background: lighten($color: $primary-color, $amount: 10);
+  color: $white;
+}
+
+/* preloader */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: $primary-color;
+}
+a.btn:hover {
+  color: darken($white, 10%);
+}
+
+
+a.text-primary:hover{
+  color: $primary-color !important;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: .2s ease;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+hr {
+  color: $primary-color;
+  height: 1rem;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.border-primary {
+  border-color: $border-color !important;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* overlay */
+
+.overlay {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $black;
+    opacity: .5;
+  }
+}
+
+.inverted {
+  background-color: $primary-color;
+  color: $white;
+  h1,h2,h3,h4,h5,h6, a, a:visited, a:hover, p {
+    color: $white;
+  }
+
+  a, a:hover, a:visited {
+    color: $white !important;
+  }
+}
+
+.d-unset {
+  display: unset !important;
+}
+
+.bg-primary {
+  background: $primary-color !important;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-dark {
+  color: $text-color-dark !important;
+}
+
+.text-light {
+  color: $text-color-light !important;
+}
+
+.text-color {
+  color: $text-color;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.border-primary {
+  border-color: $primary-color !important;
+}
+
+/* form control */
+.form-control{
+  height: 50px;
+  border-radius: 0;
+  &:focus{
+    box-shadow: none;
+    outline: 0;
+    border-color: $primary-color;
+  }
+  &::placeholder {
+    font-size: 13px;
+  }
+}
+
+textarea.form-control{
+  height: 150px;
+}
+
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
+  background: $primary-color !important;
+}
