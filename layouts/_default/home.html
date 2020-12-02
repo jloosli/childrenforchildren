@@ -1,27 +1,17 @@
 {{- define "main" -}}
 <main class="main">
-  <section class="announcements">
-    {{.Content}}
-  </section>
-  {{- range $week := $.Site.Data.week -}}
-  <section class="dateSection">
-    <h2>Meetings for {{ dateFormat "Monday, Jan 2, 2006" .date }}</h2>
-    <div class="cards">
-      {{ range $id, $link := .classes }}
-      {{ $currentMeeting := index $.Site.Data.meetings $id }}
-      {{ if in (slice $week.type "all") $currentMeeting.type }}
-      <a href="{{ $link }}">
-        <div class="card">
-          <div class="image">
-            <img src="{{ $currentMeeting.image }}" alt="{{ $currentMeeting.name }}">
-          </div>
-          <div class="title"><h4>{{ $currentMeeting.name }} ({{ $currentMeeting.time }})</h4></div>
-        </div>
-      </a>
-      {{- end -}}
-      {{- end -}}
+  {{ partial "search" . }}
+  <section class="performers">
+    {{ range $.Site.Data.performers }}
+    <div class="card">
+      <div class="name">{{ .name }}</div>
+      <div class="thumbnail">
+        <img src="https://img.youtube.com/vi/{{ .youtubeID }}/mqdefault.jpg"
+                                  />
+      </div>
+      <div class="tags">{{ delimit .tags ", " }}</div>
     </div>
+    {{ end }}
   </section>
-{{- end -}}
 </main>
 {{- end -}}
