@@ -1,17 +1,24 @@
 {{- define "main" -}}
-<main class="main">
-  {{ partial "search" . }}
-  <section class="performers">
-    {{ range $.Site.Data.performers }}
-    <div class="card">
-      <div class="name">{{ .name }}</div>
-      <div class="thumbnail">
-        <img src="https://img.youtube.com/vi/{{ .youtubeID }}/mqdefault.jpg"
-                                  />
+<div class="wrapper">
+  <main class="main" id="main">
+    {{ partial "search" . }}
+    <section class="performers list" id="performers">
+      {{ range $.Site.Data.performers }}
+      <div class="card">
+        <div class="name">{{ .name }}</div>
+        <div class="thumbnail">
+          <img src="https://img.youtube.com/vi/{{ .youtubeID }}/mqdefault.jpg"/>
+        </div>
+        <div class="tags">{{ delimit .tags ", " }}</div>
       </div>
-      <div class="tags">{{ delimit .tags ", " }}</div>
-    </div>
-    {{ end }}
-  </section>
-</main>
+      {{ end }}
+
+    </section>
+  </main>
+</div>
+<div id="overlay">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qj3cu9PlHHU" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+</div>
 {{- end -}}
