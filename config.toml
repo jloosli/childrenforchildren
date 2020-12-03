@@ -8,12 +8,12 @@ title = "Children for Children Concert"
 # main menu
 [[menu.main]]
 name = "Home"
-URL = "/"
+URL = "#home"
 weight = 1
 
 [[menu.main]]
 name = "Our Cause"
-URL = "#cause"
+URL = "#main"
 weight = 2
 
 [[menu.main]]
