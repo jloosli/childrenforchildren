@@ -1,5 +1,5 @@
 ---
-title: Help the Children
+title: Help us Change the World
 ---
 ## Here's how the concert works
 
