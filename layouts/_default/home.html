@@ -1,6 +1,7 @@
 {{- define "main" -}}
 <div class="wrapper">
   <main class="main" id="main">
+    <h2>Performances</h2>
     {{ partial "search" . }}
     <section class="performers list" id="performers">
       {{ range $.Site.Data.performers }}
@@ -17,7 +18,5 @@
   </main>
 </div>
 <div id="overlay" onclick="closeVideo()">
-  <div class="youtube-wrapper">
-  </div>
 </div>
 {{- end -}}

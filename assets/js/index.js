@@ -13,29 +13,30 @@ const performerList = new List('main', options);
 const overlay = document.getElementById('overlay');
 
 function showVideo(videoID) {
-    overlay.style.display = 'grid';
     const src = `https://www.youtube.com/embed/${videoID}?autoplay=1`;
-    const iframe = createYoutubeIframe();
-    iframe.src = src;
-    overlay.querySelector('div').appendChild(iframe);
-
+    const youtubeCode = createYoutubeCode(src);
+    overlay.appendChild(youtubeCode);
+    overlay.style.display = 'grid';
 }
 
-function createYoutubeIframe() {
+function createYoutubeCode(src) {
+    const div = document.createElement('div');
+    div.setAttribute('class', 'youtube-wrapper');
+
     const iframe = document.createElement('iframe');
     iframe.title = "Youtube Video";
     iframe.allowfullscreen = true;
-    return iframe;
+    iframe.src = src;
+
+    div.appendChild(iframe);
+    return div;
 }
 
-function removeIframe() {
-    const parent = overlay.querySelector('div')
-    const iframe = parent.querySelector('iframe');
-    // parent.removeChild(iframe);
-    iframe.remove();
+function removeYoutubeCode() {
+    overlay.innerHTML = '';
 }
 
 function closeVideo() {
     overlay.style.display = 'none';
-    removeIframe();
+    removeYoutubeCode();
 }

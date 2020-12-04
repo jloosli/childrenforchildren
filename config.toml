@@ -1,6 +1,6 @@
 baseURL = "https://childrenconcert.com/"
 languageCode = "en-us"
-title = "Children for Children Concert"
+title = "Children for Children"
 
 ############################## navigation ###############################
 [menu]

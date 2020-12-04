@@ -11,6 +11,7 @@
   grid-column: 1 / 4;
 }
 
-body {
+html {
   scroll-behavior: smooth;
+  scroll-padding: 2em;
 }
