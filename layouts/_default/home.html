@@ -1,4 +1,5 @@
 {{- define "main" -}}
+{{ partial "our-cause" . }}
 <div class="wrapper">
   <main class="main" id="performers">
     <h2>Performances</h2>
@@ -17,6 +18,6 @@
     </section>
   </main>
 </div>
-<div id="overlay" onclick="closeVideo()">
-</div>
+<div id="overlay" onclick="closeVideo()"></div>
+{{ partial "donation" . }}
 {{- end -}}

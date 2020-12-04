@@ -20,12 +20,12 @@ weight = 2
 
 [[menu.main]]
 name = "Our Cause"
-URL = "#main"
+URL = "#our-cause"
 weight = 3
 
 [[menu.main]]
 name = "Donation"
-URL = "#donate"
+URL = "#donation"
 weight = 4
 
 ######################## modules ####################################
