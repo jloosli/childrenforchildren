@@ -1,9 +1,9 @@
 {{- define "main" -}}
 <div class="wrapper">
-  <main class="main" id="main">
+  <main class="main" id="performers">
     <h2>Performances</h2>
     {{ partial "search" . }}
-    <section class="performers list" id="performers">
+    <section class="performers list">
       {{ range $.Site.Data.performers }}
       <div class="card" onclick="showVideo('{{ .youtubeID }}')">
         <div class="name">{{ .name }}</div>

@@ -1,9 +1,9 @@
 ---
-title: 2020 Children for Children Concerts
+title: Help the Children
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsam iure nam sequi temporibus! Beatae illum
-perspiciatis quas quasi! Accusamus architecto, aspernatur commodi culpa dolor doloribus dolorum eius eos impedit, ipsa
-odio officiis quo sit veniam voluptate? Ab adipisci animi inventore ipsum laudantium nesciunt repudiandae suscipit,
-voluptatem! Cumque fugit, illum.
+## Here's how the concert works
 
-## Yessiree
+Children share their talents (I use the word "talent" liberally - we've had everything
+from poetry recitations to dances to piano pieces to songs sung to chime-playing to holding up a painting they've done)
+and grown-ups come to watch (virtually this year), "paying" the kids for the concert by donating an amount of their choice.
+For more information on the charity we're supporting, read on below.

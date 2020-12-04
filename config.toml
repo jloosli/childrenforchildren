@@ -2,6 +2,8 @@ baseURL = "https://childrenconcert.com/"
 languageCode = "en-us"
 title = "Children for Children"
 
+disableKinds = ["taxonomy", "term" ]
+
 ############################## navigation ###############################
 [menu]
 
@@ -12,14 +14,19 @@ URL = "#home"
 weight = 1
 
 [[menu.main]]
+name = "Performers"
+URL = "#performers"
+weight = 2
+
+[[menu.main]]
 name = "Our Cause"
 URL = "#main"
-weight = 2
+weight = 3
 
 [[menu.main]]
 name = "Donation"
 URL = "#donate"
-weight = 3
+weight = 4
 
 ######################## modules ####################################
 

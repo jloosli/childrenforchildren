@@ -3,11 +3,19 @@
   background-size: cover;
   background-position: center;
 
-  display: grid;
-  padding: 30px;
-  color: white;
+  color: $white;
+  padding: 4rem 0;
+  .wrapper {
+    height: 100%;
+  }
 
-  grid-template-columns: auto;
-  grid-template-rows: 5px;
-
+  .main-info {
+    position: relative;
+    display: grid;
+    height: 100%;
+    place-content: center;
+.call-to-action {
+  font-size: 2.8em;
+}
+  }
 }

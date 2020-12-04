@@ -5,6 +5,9 @@ header {
   align-items: baseline;
   gap: 1rem;
   color: $primary-color-light;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  padding: 0.5em;
 
   .logotype {
     font-size: 1.4em;
