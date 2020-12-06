@@ -2,9 +2,11 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+background-image: url('/images/girl_drinking_water.png');
 
   color: $white;
   padding: 4rem 0;
+
   .wrapper {
     height: 100%;
   }
@@ -14,8 +16,9 @@
     display: grid;
     height: 100%;
     place-content: center;
-.call-to-action {
-  font-size: 2.8em;
-}
+
+    .call-to-action {
+      font-size: 2.8em;
+    }
   }
 }
