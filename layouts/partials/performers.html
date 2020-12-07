@@ -1,8 +1,8 @@
-<div class="wrapper">
-  <main class="main" id="performers">
+<section id="performers">
+  <div class="wrapper">
     <h2>Performances</h2>
     {{ partial "search" . }}
-    <section class="performers list">
+    <section class="cards list">
       {{ range $.Site.Data.performers }}
       <div class="card" onclick="showVideo('{{ .youtubeID }}')">
         <div class="name">{{ .name }}</div>
@@ -14,6 +14,7 @@
       {{ end }}
 
     </section>
-  </main>
-</div>
+  </div>
+</section>
+
 <div id="overlay" onclick="closeVideo()"></div>
