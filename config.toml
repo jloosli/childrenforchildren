@@ -28,6 +28,11 @@ name = "Donation"
 URL = "#donation"
 weight = 4
 
+[[menu.main]]
+name = "About Us"
+URL = "#about-us"
+weight = 5
+
 ######################## modules ####################################
 
 [module]
