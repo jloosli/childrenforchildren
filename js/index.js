@@ -2,23 +2,11 @@
  * Search
  **************************/
 const options = {
-    valueNames: ['name', 'tags'],
-    listContainer: 'performers'
+    valueNames: ['name', 'talent'],
+    listContainer: 'cards'
 }
 
-const performerList = new List('performances', options);
-
-/******************************
- * Nav
- */
-
-const header = document.querySelector('header');
-let lastKnownScrollPostion = 0;
-document.addEventListener('scroll', function(e){
-    // if(window.scrollY > 100){
-    //     header.style.backgroundColor = 'blue';
-    // }
-})
+const performerList = new List('performers', options);
 
 /*******************************
  Overlay
