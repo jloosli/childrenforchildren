@@ -1,0 +1,12 @@
+{
+  "name": "childrenforchildren",
+  "version": "1.0.0",
+  "main": "getPerformers.js",
+  "repository": "git@github.com:jloosli/childrenforchildren.git",
+  "author": "Jared Loosli <jloosli@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "g-sheets-api": "^1.4.0"
+  }
+}

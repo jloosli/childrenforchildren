@@ -2,7 +2,7 @@ baseURL = "https://childrenconcert.com/"
 languageCode = "en-us"
 title = "Children for Children"
 
-disableKinds = ["taxonomy", "term" ]
+disableKinds = ["taxonomy", "term"]
 
 ############################## navigation ###############################
 [menu]
@@ -32,6 +32,13 @@ weight = 4
 name = "About Us"
 URL = "#about-us"
 weight = 5
+
+[[menu.main]]
+name = "Donate Now"
+URL = "https://www.gofundme.com/f/tigrayan-WAR-Victims"
+weight = 5
+[menu.main.params]
+class = "btn btn-outline"
 
 ######################## modules ####################################
 

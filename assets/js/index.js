@@ -39,7 +39,9 @@ function createYoutubeCode(src) {
 
     const iframe = document.createElement('iframe');
     iframe.title = "Youtube Video";
-    iframe.allowfullscreen = true;
+    iframe.setAttribute('allowFullscreen', '')
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture')
+    iframe.setAttribute('frameborder', '0')
     iframe.src = src;
 
     div.appendChild(iframe);

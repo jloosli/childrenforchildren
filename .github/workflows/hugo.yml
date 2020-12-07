@@ -11,6 +11,17 @@ jobs:
       - name: Check out
         uses: actions/checkout@v2
 
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Get packages
+        run: yarn
+
+      - name: Get latest data
+        run: node getPerformers.js
+
       - name: Build and Publish Site
         uses: chabad360/hugo-gh-pages@master
         with:

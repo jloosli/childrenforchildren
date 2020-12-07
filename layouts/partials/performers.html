@@ -5,11 +5,11 @@
     <section class="cards list">
       {{ range $.Site.Data.performers }}
       <div class="card" onclick="showVideo('{{ .youtubeID }}')">
-        <div class="name">{{ .name }}</div>
+        <div class="name">{{ .fullName }}</div>
         <div class="thumbnail">
           <img src="https://img.youtube.com/vi/{{ .youtubeID }}/mqdefault.jpg" alt="Youtube Thumbnail for {{.name}}"/>
         </div>
-        <div class="tags">{{ delimit .tags ", " }}</div>
+        <div class="tags">{{ .talent }}</div>
       </div>
       {{ end }}
 
