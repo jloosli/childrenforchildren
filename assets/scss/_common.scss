@@ -156,3 +156,35 @@ textarea.form-control{
 a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
   background: $primary-color !important;
 }
+
+.img-right{
+  float: right;
+  margin-left: 2em;
+}
+
+.img-left{
+  float: left;
+  margin-right: 2em;
+
+}
+
+.img-constrained{
+  max-width: 380px;
+
+}
+
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
