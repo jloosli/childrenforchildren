@@ -1,24 +1,7 @@
 {{- define "main" -}}
 
 {{ partial "our-cause" . }}
-<div class="wrapper">
-  <main class="main" id="performers">
-    <h2>Performances</h2>
-    {{ partial "search" . }}
-    <section class="performers list">
-      {{ range $.Site.Data.performers }}
-      <div class="card" onclick="showVideo('{{ .youtubeID }}')">
-        <div class="name">{{ .name }}</div>
-        <div class="thumbnail">
-          <img src="https://img.youtube.com/vi/{{ .youtubeID }}/mqdefault.jpg" alt="Youtube Thumbnail for {{.name}}"/>
-        </div>
-        <div class="tags">{{ delimit .tags ", " }}</div>
-      </div>
-      {{ end }}
-
-    </section>
-  </main>
-</div>
-<div id="overlay" onclick="closeVideo()"></div>
+{{ partial "about-us" . }}
+{{ partial "performers" . }}
 {{ partial "donation" . }}
 {{- end -}}
