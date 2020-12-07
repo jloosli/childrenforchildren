@@ -3,10 +3,18 @@
  **************************/
 const options = {
     valueNames: ['name', 'talent'],
-    listContainer: 'cards'
+    // listContainer: 'cards'
 }
 
 const performerList = new List('performers', options);
+
+let search = document.querySelector('.fuzzy-search');
+search.addEventListener('search', e=>{
+    if(!e.inputType){
+        console.log(e)
+        performerList.search(search.value)
+    }
+})
 
 /*******************************
  Overlay
