@@ -4,10 +4,11 @@
     {{ partial "search" . }}
     <section class="cards list">
       {{ range $.Site.Data.performers }}
-      <div class="card" onclick="showVideo('{{ .youtubeID }}')">
+      <div class="card" onclick="showVideo({{ . | jsonify | safeJS }})">
         <div class="name">{{ .fullName }}</div>
         <div class="thumbnail">
-          <img src="https://img.youtube.com/vi/{{ .youtubeID }}/mqdefault.jpg" alt="Youtube Thumbnail for {{.fullName}}"/>
+          <img src="https://img.youtube.com/vi/{{ .youtubeID }}/mqdefault.jpg"
+               alt="Youtube Thumbnail for {{.fullName}}"/>
         </div>
         <div class="talent">{{ .talent }}</div>
       </div>
