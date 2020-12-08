@@ -5,7 +5,7 @@ title = "Children for Children"
 disableKinds = ["taxonomy", "term"]
 
 [params]
-gofundmeID = 'donation-page-for-children-for-children'
+gofundmeLink = "https://charity.gofundme.com/o/en/campaign/donation-page-for-children-for-children"
 
 ############################## navigation ###############################
 [menu]
@@ -19,27 +19,27 @@ weight = 1
 [[menu.main]]
 name = "Performers"
 URL = "#performers"
-weight = 2
+weight = 3
 
 [[menu.main]]
 name = "Our Cause"
 URL = "#our-cause"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "Donation"
 URL = "#donation"
-weight = 4
+weight = 5
 
 [[menu.main]]
 name = "About Us"
 URL = "#about-us"
-weight = 5
+weight = 2
 
 [[menu.main]]
 name = "Donate Now"
 URL = "https://charity.gofundme.com/o/en/campaign/donation-page-for-children-for-children"
-weight = 5
+weight = 6
 [menu.main.params]
 class = "btn"
 

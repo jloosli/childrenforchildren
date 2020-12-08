@@ -19,18 +19,21 @@
     position: relative;
     display: grid;
     height: 100%;
-    place-content: center end;
-
+    place-content: end end;
+    @include mobile {
+      place-content: center end;
+    }
     .call-to-action {
 
-      font-size: 5em;
+      font-size: 4em;
       font-weight: 900;
       width: 100%;
       text-align: right;
       text-transform: uppercase;
+      line-height: 1.2;
 
       @include mobile {
-        line-height: 1.5;
+        line-height: 1.9;
       }
     }
   }
