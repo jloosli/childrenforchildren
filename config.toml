@@ -41,7 +41,7 @@ name = "Donate Now"
 URL = "https://charity.gofundme.com/o/en/campaign/donation-page-for-children-for-children"
 weight = 5
 [menu.main.params]
-class = "btn btn-outline"
+class = "btn"
 
 ######################## modules ####################################
 
