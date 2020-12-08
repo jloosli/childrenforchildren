@@ -5,7 +5,11 @@
   background-image: url('/images/girl_drinking_water.png');
 
   color: $white;
-  padding: 4rem 0;
+  //padding: 4rem 0;
+  padding-top: 5.5rem;
+  @include mobile{
+    padding-top: 0;
+  }
 
   .wrapper {
     height: 100%;
@@ -18,12 +22,16 @@
     place-content: center end;
 
     .call-to-action {
+
       font-size: 5em;
       font-weight: 900;
       width: 100%;
       text-align: right;
-     text-transform: uppercase;
-      line-height: 1.5;
+      text-transform: uppercase;
+
+      @include mobile {
+        line-height: 1.5;
+      }
     }
   }
 }

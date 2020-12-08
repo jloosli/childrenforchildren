@@ -34,12 +34,13 @@ a:hover,
 a:focus {
   color: $primary-text-color;
 }
+
 a.btn:hover {
   color: darken($primary-text-color, 10%);
 }
 
 
-a.text-primary:hover{
+a.text-primary:hover {
   color: $primary-color !important;
 }
 
@@ -93,7 +94,8 @@ hr {
 .inverted {
   background-color: $primary-color;
   color: $white;
-  h1,h2,h3,h4,h5,h6, a, a:visited, a:hover, p {
+
+  h1, h2, h3, h4, h5, h6, a, a:visited, a:hover, p {
     color: $white;
   }
 
@@ -135,41 +137,54 @@ hr {
 }
 
 /* form control */
-.form-control{
+.form-control {
   height: 50px;
   border-radius: 0;
-  &:focus{
+
+  &:focus {
     box-shadow: none;
     outline: 0;
     border-color: $primary-color;
   }
+
   &::placeholder {
     font-size: 13px;
   }
 }
 
-textarea.form-control{
+textarea.form-control {
   height: 150px;
 }
 
-a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
   background: $primary-color !important;
 }
 
-.img-right{
+.img-right {
   float: right;
-  margin-left: 2em;
+  margin: .5em 0;
+  @include mobile {
+    margin-left: 2em;
+  }
 }
 
-.img-left{
+.img-left {
   float: left;
-  margin-right: 2em;
-
+  margin: .5em 0;
+  @include mobile {
+    margin-right: 2em;
+  }
 }
 
-.img-constrained{
-  max-width: 380px;
 
+.img-constrained {
+  width: 100%;
+  img{
+    width: 100%;
+  }
+  @include mobile {
+    max-width: 380px;
+  }
 }
 
 .youtube-wrapper {
