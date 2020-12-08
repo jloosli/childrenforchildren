@@ -23,24 +23,24 @@ const overlay = document.getElementById('overlay');
 
 function showVideo(performer) {
     const {youtubeID} = performer;
-    const src = `https://www.youtube.com/embed/${youtubeID}?autoplay=1`;
-    const youtubeCode = createYoutubeIframe(src);
+    const youtubeCode = createYoutubeIframe(youtubeID);
     const meta = createMetaDiv(performer)
     overlay.appendChild(youtubeCode);
     overlay.appendChild(meta);
     overlay.style.display = 'grid';
 }
 
-function createYoutubeIframe(src) {
+function createYoutubeIframe(youtubeID) {
     const div = document.createElement('div');
-    div.setAttribute('class', 'youtube-wrapper');
 
+    div.setAttribute('class', 'youtube-wrapper');
     const iframe = document.createElement('iframe');
+
     iframe.title = "Youtube Video";
     iframe.setAttribute('allowFullscreen', '')
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture')
     iframe.setAttribute('frameborder', '0')
-    iframe.src = src;
+    iframe.src = `https://www.youtube.com/embed/${youtubeID}?autoplay=1`;
 
     div.appendChild(iframe);
     return div;
