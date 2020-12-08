@@ -4,6 +4,9 @@ title = "Children for Children"
 
 disableKinds = ["taxonomy", "term"]
 
+[params]
+gofundmeID = 'donation-page-for-children-for-children'
+
 ############################## navigation ###############################
 [menu]
 
@@ -35,7 +38,7 @@ weight = 5
 
 [[menu.main]]
 name = "Donate Now"
-URL = "https://www.gofundme.com/f/tigrayan-WAR-Victims"
+URL = "https://charity.gofundme.com/o/en/campaign/donation-page-for-children-for-children"
 weight = 5
 [menu.main.params]
 class = "btn btn-outline"
