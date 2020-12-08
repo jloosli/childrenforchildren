@@ -3,7 +3,7 @@
     <h2>Performances</h2>
     {{ partial "search" . }}
     <section class="cards list">
-      {{ range sort $.Site.Data.performers "last name" }}
+      {{ range sort (sort $.Site.Data.performers "first_name") "last_name" }}
       <div class="card" onclick="showVideo('{{ .youtubeID }}')">
         <div class="name">{{ .fullName }}</div>
         <div class="thumbnail">

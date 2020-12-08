@@ -1,5 +1,6 @@
 const reader = require('g-sheets-api')
 const fs = require('fs')
+
 const readerOptions = {
     sheetId: '1rB7yAKKrYtcJtsEkqmjiIGpxAtDI_MIHLWRwdji4azQ'
 }
@@ -8,7 +9,9 @@ reader(readerOptions, (results) => {
     const cleaned = results.map(res => {
         const youtubeID = getLink(res.link);
         const fullName = [res['first name'], res['last name']].join(' ')
-        return {...res, fullName, youtubeID}
+        const first_name = res['first name']
+        const last_name = res['last name']
+        return {...res, fullName, youtubeID, first_name, last_name}
     })
     const jsonified = JSON.stringify(cleaned)
     fs.writeFileSync('data/performers.json', jsonified)

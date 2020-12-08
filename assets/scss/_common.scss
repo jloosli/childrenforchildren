@@ -32,11 +32,10 @@ img {
 a,
 a:hover,
 a:focus {
-  text-decoration: none;
-  color: $primary-color;
+  color: $primary-text-color;
 }
 a.btn:hover {
-  color: darken($white, 10%);
+  color: darken($primary-text-color, 10%);
 }
 
 
@@ -187,4 +186,6 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     height: 100%;
     border: 0;
   }
+
+
 }
