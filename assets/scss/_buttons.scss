@@ -16,10 +16,11 @@
   &:focus {
     outline: 0;
     box-shadow: 0 !important;
+    background-color: $primary-color;
   }
 }
 
-a.btn,a.btn:hover{
+a.btn, a.btn:hover {
   text-decoration: none;
 }
 
