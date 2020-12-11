@@ -1,3 +1,4 @@
+{{ partial "built-by" . }}
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.0/list.min.js"></script>
 {{ $js := resources.Get "/js/index.js"}}
-<script src="{{ $js.Permalink }}" ></script>
+<script src="{{ $js.Permalink }}"></script>

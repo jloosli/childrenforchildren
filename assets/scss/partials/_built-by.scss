@@ -1,0 +1,9 @@
+.built-by {
+  background-color: $primary-color;
+  color: white;
+  padding: 2rem 0;
+
+  .wrapper {
+    justify-items: end;
+  }
+}
