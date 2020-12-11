@@ -4,8 +4,10 @@ title = "Children for Children"
 
 disableKinds = ["taxonomy", "term"]
 
+
 [params]
 gofundmeLink = "https://charity.gofundme.com/o/en/campaign/donation-page-for-children-for-children"
+googleTagManagerID = "G-6E6HCM11LH"
 
 ############################## navigation ###############################
 [menu]
